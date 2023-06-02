@@ -1,13 +1,19 @@
-### layout
+Layout
 
-### Navbar
-logo
-search
-menuitem
+Navbar
+Logo
+Search
+Menuitem
 
-### Modal
-modal page
-hooks
-useregistermodal
+Modal Page
+Hooks
+useRegisterModal
 
-create register model
+Create Register Modal
+
+Input Component
+
+use react-hook-form
+
+use react-hot-toast
+
