@@ -4,6 +4,8 @@ import { use, useCallback, useEffect, useState } from "react";
 import { IoMdClose } from 'react-icons/io';
 import Button from "../Button";
 
+// Base Modal Page
+
 interface ModalProps {
     isOpen: boolean;
     onClose: () => void;
@@ -62,6 +64,9 @@ const Modal: React.FC<ModalProps> = (
         secondaryAction();
     }, [disabled, secondaryAction]);
 
+    if(!isOpen) {  
+        return null;
+    }
 
     return (
         <>
@@ -79,7 +84,7 @@ const Modal: React.FC<ModalProps> = (
                 bg-neutral-800/70
             ">
                 <div
-                    className="
+                    className="                        
                         relative
                         w-full
                         md:w-4/6
@@ -94,13 +99,13 @@ const Modal: React.FC<ModalProps> = (
                 >
                     {/*content*/}
                     <div
-                        className="
+                        className={`
                         translate
                         duration-300
                         h-full
                         ${showModal ? 'translate-y-0' : 'translate-y-full'}
                         ${showModal ? 'opacity-100' : 'opacity-0'}
-                        ">
+                        `}>
                         <div className="
                             translate
                             h-full
