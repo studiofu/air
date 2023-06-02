@@ -6,6 +6,7 @@ interface ClientOnlyProps {
     children: React.ReactNode;
 }
 
+// used to fix special error when refresh
 const ClientOnly : React.FC<ClientOnlyProps> = ({children}) => {
     
     const [hasMounted, setHasMounted] = useState(false);
