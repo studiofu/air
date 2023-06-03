@@ -17,7 +17,7 @@ use react-hook-form for form input
 
 use react-hot-toast to show alert message
 
-use prisma orm
+use prisma orm, install prisma as dev dependent
 
 npx prisma db push
 

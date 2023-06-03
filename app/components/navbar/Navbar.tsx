@@ -1,11 +1,20 @@
 'use client';
 
+import { User } from "@prisma/client";
 import Container from "../Container";
 import Logo from "./Logo";
 import Search from "./Search";
 import UserMenu from "./UserMenu";
 
-const Navbar = () => {
+interface NavbarProps {
+    // pipe (|) means that the prop can be of either type
+    currentUser?: User | null;
+}
+
+const Navbar : React.FC<NavbarProps> = ({
+        currentUser
+}) => {
+    console.log({currentUser});
     return (
         // it is the navgation bar
         // you can change the background color of the navigation bar here
@@ -31,7 +40,7 @@ const Navbar = () => {
                     >
                         <Logo />
                         <Search />
-                        <UserMenu />
+                        <UserMenu currentUser={currentUser}/>
                     </div>
                 </Container>
             </div>
