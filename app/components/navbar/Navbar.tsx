@@ -5,6 +5,7 @@ import Container from "../Container";
 import Logo from "./Logo";
 import Search from "./Search";
 import UserMenu from "./UserMenu";
+import SquareJS from "../SquareJS";
 
 interface NavbarProps {
     // pipe (|) means that the prop can be of either type
@@ -23,11 +24,12 @@ const Navbar : React.FC<NavbarProps> = ({
         <div className="fixed w-full bg-white z-10 shadow-sm">
             <div
                 className="
-            py-4
-            border-b[1px]
-            "
+                    py-4
+                    border-b[1px]
+                "
             >
                 <Container>
+                    <SquareJS value="123"></SquareJS>                    
                     <div
                         className="
                         flex
