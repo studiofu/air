@@ -22,8 +22,9 @@ export default async function RootLayout({
   children: React.ReactNode
 }) {
 
+  // server side rendering
   const currentUser = await getCurrentUser();
-  console.log('currentUser');
+  //console.log('current user:', currentUser);
 
   return (
     <html lang="en">
@@ -32,6 +33,8 @@ export default async function RootLayout({
           <ToasterProvider />
           <RegisterModal />
           <LoginModal />
+
+          {/* position fixed navgiation bar */}          
           <Navbar currentUser={currentUser} />                    
         </ClientOnly>
         {children}

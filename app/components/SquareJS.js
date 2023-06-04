@@ -7,7 +7,7 @@ const SquareJS = (props) => {
             </button>
                         
             <svg className="w-20 h-20">
-                <circle cx="50%" cy="50%" r="50%" fill="red" />
+                <circle cx="50%" cy="50%" r="50%" fill="blue"  />
             </svg>
         
         </div>

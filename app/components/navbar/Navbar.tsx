@@ -6,6 +6,7 @@ import Logo from "./Logo";
 import Search from "./Search";
 import UserMenu from "./UserMenu";
 import SquareJS from "../SquareJS";
+import Categories from "./Categories";
 
 interface NavbarProps {
     // pipe (|) means that the prop can be of either type
@@ -46,6 +47,7 @@ const Navbar : React.FC<NavbarProps> = ({
                     </div>
                 </Container>
             </div>
+            <Categories />
         </div>
     );
 };

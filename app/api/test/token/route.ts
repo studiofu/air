@@ -15,6 +15,8 @@ export async function GET(
 
     const token = await getToken({ req: request })
 
+    console.log('calling: test/token/route.ts');
+
     if(token) { 
         return NextResponse.json({
             message: JSON.stringify(token)

@@ -4,7 +4,7 @@ import { use, useCallback, useEffect, useState } from "react";
 import { IoMdClose } from 'react-icons/io';
 import Button from "../Button";
 
-// Base Modal Page
+// Base Modal Page, over whole screen
 
 interface ModalProps {
     isOpen: boolean;
